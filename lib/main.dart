@@ -52,6 +52,11 @@ class _HomePageState extends State<HomePage> {
 
   void _changedBR(String a){
 
+    if(_controllerBR.text.isEmpty){
+      _controllerUSD.text = "";
+      _controllerEURO.text = "";
+    }
+
     if(isNumber(a)) {
        double real = double.parse(a);
     _controllerUSD.text = (real/dolar).toStringAsFixed(2);
@@ -68,6 +73,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _changedUSD(String a){
+
+      if(_controllerUSD.text.isEmpty){
+      _controllerBR.text = "";
+      _controllerEURO.text = "";
+    }
 
     if(isNumber(a)) {
        double real = double.parse(a);
@@ -86,6 +96,11 @@ class _HomePageState extends State<HomePage> {
   }
 
     void _changedEURO(String a){
+
+        if(_controllerEURO.text.isEmpty){
+      _controllerUSD.text = "";
+      _controllerBR.text = "";
+    }
 
       if(isNumber(a)){
   double real = double.parse(a);
@@ -137,6 +152,7 @@ class _HomePageState extends State<HomePage> {
             else {
               dolar = snapshot.data!["results"]["currencies"]["USD"]["buy"];
               euro = snapshot.data!["results"]["currencies"]["EUR"]["buy"];
+
          return SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
