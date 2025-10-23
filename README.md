@@ -1,6 +1,16 @@
-# converter
+# 💱 Conversor de Moedas
 
-A new Flutter project.
+Aplicativo Flutter que converte valores entre **Real, Dólar e Euro**.
+
+<p align="center">
+  <img src="assets/images/preview.png" width="300" alt="Tela principal do app">
+</p>
+
+## 🚀 Funcionalidades
+- Conversão em tempo real usando a API HG Finance
+- Interface simples e responsiva
+
+
 
 ## Getting Started
 
