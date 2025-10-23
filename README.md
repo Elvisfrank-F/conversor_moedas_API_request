@@ -4,6 +4,7 @@ Aplicativo Flutter que converte valores entre **Real, Dólar e Euro**.
 
 <p align="center">
   <img src="assets/images/preview.png" width="300" alt="Tela principal do app">
+  <img src="assets/images/preview2.png" width="300" alt="Tela principal do app">
 </p>
 
 ## 🚀 Funcionalidades
